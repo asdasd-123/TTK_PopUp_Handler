@@ -69,10 +69,8 @@ class PopUp(__PopUpController__):
 
         # Decide on which function based on desired window status
         if status == 'open':
-            print("window open, switching focus")
             self._update_text(win_id, text, heading)
         elif status == 'not created':
-            print("window not created, creating window")
             self._setup_new_window(win_id)
 
         # Center the window
@@ -95,7 +93,7 @@ class PopUp(__PopUpController__):
         self.pop_dict[win_id][0] = 'open'
 
         # Store the window toplevel in the PopUpController dictionary
-        win = self.popup_dict[win_id][1] = tk.Toplevel(self.master.root)
+        win = self.popup_dict[win_id][1] = tk.Toplevel(self.master)
 
         # ==============
         # Widgets and labels
