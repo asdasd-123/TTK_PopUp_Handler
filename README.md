@@ -1,5 +1,5 @@
-## PopUp
-# A module to quickly produce and manage basic popups in tkinter
+# PopUp
+## A module to quickly produce and manage basic popups in tkinter
 
 Allows for the handling of multiple pop-up windows.
 Each one is asigned a window_id.
