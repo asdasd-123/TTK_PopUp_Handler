@@ -7,6 +7,7 @@ If a popup with the specified window_id is already open, switch focus
 and update the text/header to the new info.
 
 Example use:
+  '''python
   root = tk.Tk()
 
   PopUp(root,                     Parent window
@@ -15,5 +16,6 @@ Example use:
          heading="header text",   heading in popup
          center=False,            center window or not
          size="200x200")          set size of window
+'''
 
 A working example can be found in "example.py"
