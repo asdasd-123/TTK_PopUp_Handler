@@ -11,13 +11,14 @@ class Application():
         button = ttk.Button(
             root,
             text="window 1",
-            command=lambda: PopUp(self, 'window1', text="1st win"))
+            command=lambda: PopUp(self.root, 'window1', text="1st win",
+                                  title="test title"))
         button.pack()
 
         button2 = ttk.Button(
             root,
             text="window 2",
-            command=lambda: PopUp(self, '2ndwindow', text="2nd win"))
+            command=lambda: PopUp(self.root, '2ndwindow', text="2nd win"))
         button2.pack()
 
         root.mainloop()
