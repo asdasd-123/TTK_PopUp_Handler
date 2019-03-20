@@ -80,7 +80,7 @@ class PopUp(__PopUpController__):
             self._center_window(win_id)
         else:
             self.popup_dict[win_id][1].geometry(size)
-        
+
         self.popup_dict[win_id][1].wm_title(title)
 
     def _setup_new_window(self, win_id):
